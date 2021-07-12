@@ -1,5 +1,5 @@
 {% set name = "symfem" %}
-{% set version = "2021.7.5" %}
+{% set version = "2021.7.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 610aa8a3fc006c78a8e31e6c6cba270a70f6d0e8460b3920de0de326805b831d
+  sha256: 37a385ae4f94b9c7a16fe791c35820770c1507565869d26559aa164320f81921
 
 build:
   noarch: python
@@ -33,7 +33,7 @@ about:
   license_family: MIT
 
   license_file: LICENSE
-  summary: 'A symbolic finite element definition library'
+  summary: A symbolic finite element definition library
 
   description: |
     Symfem is a symbolic finite element definition library, that can be used to  
