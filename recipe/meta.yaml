@@ -33,7 +33,7 @@ about:
   license_family: MIT
 
   license_file: LICENSE
-  summary: 'A symbolic finite element definition library'
+  summary: A symbolic finite element definition library
 
   description: |
     Symfem is a symbolic finite element definition library, that can be used to  
