@@ -1,5 +1,5 @@
 {% set name = "symfem" %}
-{% set version = "2021.7.5" %}
+{% set version = "2021.7.6" %}
 
 package:
   name: {{ name|lower }}
