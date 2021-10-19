@@ -19,7 +19,7 @@ requirements:
     - python >=3.7
     - pip
   run:
-    - numpy >=1.17
+    - numpy
     - python >=3.7
     - sympy
 
