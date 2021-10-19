@@ -1,5 +1,5 @@
 {% set name = "symfem" %}
-{% set version = "2021.8.2" %}
+{% set version = "2021.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,22 +7,20 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5aaa9b9e40b5d11dd8feaaf94d2b72fd98267d4b2ea57fccd379dcc3ada9da4d
+  sha256: 65193e013047dda1c2d70908029d81e0d11ca9b6c3f49e9a7f79c2d898ec224d
 
 build:
   noarch: python
   number: 0
-
-
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
     - numpy
-    - python >=3.6
+    - python >=3.7
     - sympy
 
 test:
