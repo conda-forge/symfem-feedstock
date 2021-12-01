@@ -1,5 +1,5 @@
 {% set name = "symfem" %}
-{% set version = "2021.10.1" %}
+{% set version = "2021.12.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 65193e013047dda1c2d70908029d81e0d11ca9b6c3f49e9a7f79c2d898ec224d
+  sha256: 6db33ec98181049d623ba68904801763f7896db011902992aff9ff40efe40003
 
 build:
   noarch: python
