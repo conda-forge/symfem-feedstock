@@ -19,7 +19,6 @@ requirements:
     - python >=3.7
     - pip
   run:
-    - numpy
     - python >=3.7
     - sympy
     - appdirs
@@ -37,7 +36,7 @@ about:
   summary: A symbolic finite element definition library
 
   description: |
-    Symfem is a symbolic finite element definition library, that can be used to  
+    Symfem is a symbolic finite element definition library, that can be used to
     symbolically evaluate the basis functions of a finite element space.
   dev_url: https://github.com/mscroggs/symfem
 
