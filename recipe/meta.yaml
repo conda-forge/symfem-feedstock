@@ -6,25 +6,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 6ea9301829eb922aa38507760d1121e1582a514edfa817c2e78b2a107264b713
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - flit
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - sympy
     - appdirs
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - symfem
 
