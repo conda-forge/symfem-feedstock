@@ -11,20 +11,22 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - flit
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - sympy
     - appdirs
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - symfem
 
